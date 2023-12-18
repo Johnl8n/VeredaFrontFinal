@@ -1,4 +1,108 @@
 .container {
+  width: 500px;
+  margin: 2rem auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.topo {
+  padding: 0;
+  background-color: #17202B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.navbar {
+  background-color: #17202B;
+  padding: 0.5em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  color: #fff;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.btnsubmit {
+  text-align: center;
+}
+
+.form_group {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.select,
+.input,
+.textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.select {
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="#000" d="M9.293 14.707a1 1 0 001.414 0l5-5a1 1 0 00-1.414-1.414L10 12.586l-4.293-4.293a1 1 0 00-1.414 1.414l5 5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 14px;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.button {
+  padding: 12px 24px;
+  background-color: #e44d26;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #fc4f00;
+}
+
+/* Estilização adicional para melhor legibilidade nos inputs e no botão */
+.input:focus,
+.select:focus,
+.textarea:focus,
+.button:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+
+
+
+
+/* .container {
   max-width: 800px;
   margin: 0 auto;
 }
@@ -52,14 +156,14 @@
 
 .button:hover {
   background-color: #0056b3;
-}
+} */
 
 /* Estilização adicional para melhor legibilidade nos inputs e no botão */
-.input:focus,
+/* .input:focus,
 .select:focus,
 .textarea:focus,
 .button:focus {
   outline: none;
   border-color: #007bff;
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
-}
+} */
