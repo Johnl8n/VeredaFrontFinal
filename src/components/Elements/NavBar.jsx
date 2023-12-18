@@ -35,7 +35,8 @@ const NavBar = () => {
       <div className={style.logo}>
         <h1>
           <Link className={style.link_logo} to="/">
-            <img src="VeredaLogo.png" alt="" />
+            {/* <img src="VeredaLogo.png" alt="" /> */}
+            <img src="\public\VeredaLogo.png" alt="" />
           </Link>
         </h1>
         <h2>
@@ -90,7 +91,7 @@ const NavBar = () => {
               </>
             ) : (
               <li>
-                <Link to="/orcamento" className={style.linkando}>
+                <Link to="/orcamento" className={style.linkandooo}>
                   Orcamentos
                 </Link>
               </li>

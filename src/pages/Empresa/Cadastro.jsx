@@ -2,6 +2,8 @@ import React, { useState, useContext, useEffect } from "react";
 import api from "../../utils/api";
 import style from "./Cadastro.module.css";
 import { Context } from "../../context/UserContext";
+import NavBar from "../../components/Elements/NavBar";
+
 
 const Cadastro = () => {
   const { create } = useContext(Context);
@@ -46,6 +48,10 @@ const Cadastro = () => {
   };
 
   return (
+
+    <>
+    <NavBar />
+
     <div className={style.container}>
       <h1>Cadastro de Produto</h1>
       <form onSubmit={handleSubmit} className={style.form}>
@@ -164,6 +170,7 @@ const Cadastro = () => {
         </button>
       </form>
     </div>
+  </>
   );
 };
 

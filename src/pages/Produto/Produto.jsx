@@ -81,7 +81,8 @@ const Produto = () => {
 
   return (
     <>
-      <NavBar />
+        <NavBar />
+
       <div className={style.container}>
         <div className={style.container_img}>
           <div className={style.img_central}>
