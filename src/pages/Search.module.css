@@ -1,0 +1,113 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem 3rem;
+  }
+  
+  .filtros {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .selecao {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .produtos {
+    /* border: 1px solid #ccc; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1.8rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 21rem;
+    padding: 0.6rem;
+    gap: 8px;
+    box-shadow: 1px 0 20px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+  }
+  
+  .div_img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 9rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+  
+  .div_img img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  
+  .div_infos {
+    display: block;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 100%;
+    word-wrap: break-word;
+    font-size: 1rem;
+  }
+  
+  .descricao {
+    height: 25%;
+    display: flex;
+    text-align: justify;
+    font-size: 12.5px;
+    font-weight: 500;
+    line-height: 15px;
+    word-wrap: break-word;
+    font-weight: 500;
+    color: rgb(22, 22, 22);
+  }
+  
+  .button_ver_mais {
+    background-color: #17202b;
+    padding: 6px 10px;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .button_ver_mais:hover {
+    background-color: #fc4f00;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .info_empresa {
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    word-wrap: break-word;
+  }
+  
+  #nome {
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  #precinho {
+    color: #fc4f00;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  

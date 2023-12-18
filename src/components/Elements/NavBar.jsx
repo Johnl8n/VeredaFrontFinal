@@ -38,11 +38,14 @@ const NavBar = () => {
             <img src="VeredaLogo.png" alt="" />
           </Link>
         </h1>
-        <select className={style.select}>
+        <h2>
+          VEREDA
+        </h2>
+        {/* <select className={style.select}>
           <option className={style.option} value="">
             Meus Produtos
           </option>
-        </select>
+        </select> */}
       </div>
       <div className={style.search}>
         <form onSubmit={hadleSubmit}>
@@ -74,8 +77,8 @@ const NavBar = () => {
           <>
             {currentUser?.usercnpj ? (
               <>
-                <li>
-                  <Link to={`/meusprodutos`} className={style.linkando}>
+                <li className={style.meusprodutos}>
+                  <Link to={`/meusprodutos`} className={style.linkandoo}>
                     Meus Produtos
                   </Link>
                 </li>

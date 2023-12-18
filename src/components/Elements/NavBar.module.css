@@ -53,7 +53,7 @@
   transition: 0.2s ease-in-out;
 }
 
-.search {
+.search form{
   gap: 1rem;
   display: flex;
   align-items: center;
@@ -86,11 +86,17 @@
   background-color: #e64000;
 }
 
+.linkandoo {
+  text-decoration: none;
+  color: white;
+}
+
 .navbar .linkando {
-  width: 5rem;
+  width: 4rem;
   height: 2rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   color: white;
   text-decoration: none;
 }
@@ -117,10 +123,6 @@
   width: 250px;
 } */
 
-.select {
-  height: 20px;
-  outline: none;
-  background: transparent;
-  border: none;
-  color: white;
+.logo h2 {
+  color: #fdc20f
 }

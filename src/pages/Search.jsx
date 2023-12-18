@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import stylecss from "../pages/Home.module.css";
+import stylecss from "../pages/Search.module.css";
 import api from "../utils/api";
 import NavBar from "../components/Elements/NavBar";
 
@@ -35,41 +35,42 @@ const Search = () => {
                     </select>
                 </div>
             </div>
-        </div>
+        
 
-        <div className={stylecss.produtos}>
-            {produtos.length > 0 &&
-                produtos.map((item) => (
-                    <div className={stylecss.card} key={item.id}>
-                        <div
-                            className={stylecss.div_img}
-                            style={{
-                                backgroundImage: `url(${UrlImagem}imagens/produto_empresa/${item.imagem})`,
-                            }}
-                        />
-                        <div className={stylecss.div_infos}>
-                            <p id={stylecss.nome}>{item.produto.nome}</p>
-                            <p id={stylecss.precinho}>R$ {item.preco}</p>
+            <div className={stylecss.produtos}>
+                {produtos.length > 0 &&
+                    produtos.map((item) => (
+                        <div className={stylecss.card} key={item.id}>
+                            <div
+                                className={stylecss.div_img}
+                                style={{
+                                    backgroundImage: `url(${UrlImagem}imagens/produto_empresa/${item.imagem})`,
+                                }}
+                            />
+                            <div className={stylecss.div_infos}>
+                                <p id={stylecss.nome}>{item.produto.nome}</p>
+                                <p id={stylecss.precinho}>R$ {item.preco}</p>
+                            </div>
+                            <div className={stylecss.descricao}>
+                                <p>{item.descricao}</p>
+                            </div>
+                            <div className={stylecss.info_empresa}>
+                                <p id={stylecss.empresa}>Empresa: {item.empresa.nome}</p>
+                            </div>
+                            <div className={stylecss.ver_mais}>
+                                <Link
+                                className={stylecss.button_ver_mais}
+                                to={`/produto/${item.id}`}
+                                >
+                                    Ver mais
+                                </Link> 
+                            </div>
                         </div>
-                        <div className={stylecss.descricao}>
-                            <p>{item.descricao}</p>
-                        </div>
-                        <div className={stylecss.info_empresa}>
-                            <p id={stylecss.empresa}>Empresa: {item.empresa.nome}</p>
-                        </div>
-                        <div className={stylecss.ver_mais}>
-                            <Link
-                              className={stylecss.button_ver_mais}
-                              to={`/produto/${item.id}`}
-                            >
-                                Ver mais
-                            </Link> 
-                        </div>
-                    </div>
-                ))
-            }
-        </div>
+                    ))
+                }
+            </div>
         {produtos.length === 0  && <p>Não foi encontrado nenhum produto com o nome {query}</p>}
+    </div>
         </>
     );
 };
