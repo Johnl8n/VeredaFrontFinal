@@ -17,6 +17,7 @@ import ChoiceLogin from "./pages/ChoiceRegister/ChoiceLogin.jsx";
 import MeusProdutos from "./pages/Empresa/MeusProdutos.jsx";
 import Modal from "./components/Modal/Modal.jsx";
 import Search from "./pages/Search.jsx";
+import ProdutosSinapi from "./pages/ProdutosSinapi";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
               }
             />
             <Route path="/produto/:id" element={<Produto />} />
+            <Route path="/produtosSinapi" element={<ProdutosSinapi />} />
             <Route path="/search" element={<Search/>}/>
             <Route path="/orcamento" element={<Orcamento />} />
             <Route path="/choiceuser" element={<ChoiceLogin />} />

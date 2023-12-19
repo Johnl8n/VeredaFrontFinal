@@ -12,7 +12,7 @@ import NavBar from "../components/Elements/NavBar";
 
 // const { authenticated } = useContext(Context);
 
-const Home = () => {
+const ProdutosSinapi = () => {
   const [produto, setProduto] = useState([]);
   const [UrlImagem, setUrlImagem] = useState(import.meta.env.VITE_URL_API);
 
@@ -28,18 +28,20 @@ const Home = () => {
 
       <div className={stylecss.container}>
         <div className={stylecss.filtros}>
-          <h1>Produtos Locais</h1>
+          <h1>Produtos Sinapi</h1>
           <div className={stylecss.selecao}>
             {/* <select name="" id={stylecss.diferente}>
               <option>Local</option>
-              <option to={`/produtosSinapi`} >Sinapi</option>
+              <option>Sinapi</option>
             </select> */}
-              <Link
-                className={stylecss.button_ver_mais}
-                to={`/produtosSinapi`}
-              >
-                Sinapi
-              </Link>
+
+                <Link
+                    className={stylecss.button_ver_mais}
+                    to={`/`}
+                >
+                    Local
+                </Link>
+
             {/* <select>
               <option value="">Selecione uma empresa</option>
             </select> */}
@@ -84,4 +86,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ProdutosSinapi;

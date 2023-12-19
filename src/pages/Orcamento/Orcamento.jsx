@@ -87,7 +87,7 @@ const Orcamento = () => {
 
   const gerarPDF = () => {
     // const logo = "logonew.png";
-    
+    // const logo = "/VeredaLogo.png"
     const docDefinition = {
       // background: [
       //   {
@@ -95,6 +95,20 @@ const Orcamento = () => {
       //     width: 300,
       //   }
       // ],
+      
+      // background: [
+      //   {
+      //     image: 'public/VeredaLogo.png',  // Ajuste o caminho conforme necessário
+      //     width: 300,
+      //     absolutePosition: { opacity: 0.5, x: 200, y: 300 }, // Ajuste as coordenadas conforme necessário
+      //   },
+      // ],
+
+      watermark: { text: 'VEREDA', color: '#fc4f00' , opacity: 0.2, bold: true, italics: false },
+      marcadagua: [
+        '...'
+      ],
+
       content: [
         { text: "Meu orçamento", style: "header" },
         {
