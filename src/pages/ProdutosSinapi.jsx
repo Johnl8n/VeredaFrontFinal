@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 
 import api from "../utils/api";
 import.meta.env.VITE_URL_API;
+import VeredaLogo from '../../public/VeredaLogo.png'
 
 // import { Context } from "../context/UserContext";
 
@@ -55,7 +56,7 @@ const ProdutosSinapi = () => {
                 <div
                   className={stylecss.div_img}
                   style={{
-                    backgroundImage: `url(${UrlImagem}imagens/produto_empresa/${produto.imagem})`,
+                    backgroundImage: `url(${VeredaLogo})`,
                   }}
                 />
                 <div className={stylecss.div_infos}>
